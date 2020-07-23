@@ -1,9 +1,19 @@
 let todos = ["item 1", "item 2", "item 3"] // Arrays are used to store multiple values in a single variable
 
-function sayHiTo(person) {
-  console.log('hi', person);
+function displayTodos() {
+  console.log('My todos:', todos);
 }
 
-sayHiTo('ben');
+displayTodos()
 
-console.log('hello')
+function addTodo(todo) {
+  todos.push(todo);
+}
+
+addTodo()
+
+function changTodo(position, newValue) {
+  todos[position] = newValue;
+}
+
+changeTodos(0, 'change 1')
