@@ -1,4 +1,4 @@
-let todos = ["item 1", "item 2", "item 3"] // Arrays are used to store multiple values in a single variable
+const todos = ['item 1', 'item 2', 'item 3', 'item 4'] // Arrays are used to store multiple values in a single variable
 
 function displayTodos() {
   console.log('My todos:', todos);
@@ -10,10 +10,15 @@ function addTodo(todo) {
   todos.push(todo);
 }
 
-addTodo()
+addTodo('new item');
 
-function changTodo(position, newValue) {
+function changeTodos(position, newValue) {
   todos[position] = newValue;
+  console.log(displayTodos);
 }
 
-changeTodos(0, 'change 1')
+changeTodos(0, 'change 1');
+
+function deleteTodo() {
+  todos.splice(0, 1);
+}
