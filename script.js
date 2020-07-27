@@ -22,3 +22,11 @@ changeTodos(0, 'change 1');
 function deleteTodo() {
   todos.splice(0, 1);
 }
+
+
+const myName = 'Ben';
+
+function sayName() {
+  console.log(myName);
+}
+sayName();
